@@ -43,7 +43,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(266, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf34Length_100WidthisError)
+		TEST_METHOD(PerimeterOf34Length_100Widthis66)
 		{
 			int width = 100;
 			int length = 34;
@@ -52,7 +52,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(66, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf100Length_34WidthisError)
+		TEST_METHOD(PerimeterOf100Length_34Widthis66)
 		{
 			int width = 34;
 			int length = 100;
@@ -61,7 +61,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(66, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf1Length_34WidthisError)
+		TEST_METHOD(PerimeterOf1Length_34Widthis70)
 		{
 			int width = 34;
 			int length = 1;
@@ -70,7 +70,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(70, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf34Length_1WidthisError)
+		TEST_METHOD(PerimeterOf34Length_1Widthis70)
 		{
 			int width = 1;
 			int length = 34;
@@ -79,7 +79,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(70, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf0Length_1WidthisError)
+		TEST_METHOD(PerimeterOf0Length_1Widthis0)
 		{
 			int width = 1;
 			int length = 0;
@@ -88,7 +88,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(0, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf1Length_0WidthisError)
+		TEST_METHOD(PerimeterOf1Length_0Widthis0)
 		{
 			int width = 0;
 			int length = 1;
@@ -97,7 +97,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(0, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf1Length_Neg1WidthisError)
+		TEST_METHOD(PerimeterOf1Length_Neg1Widthis0)
 		{
 			int width = -1;
 			int length = 1;
@@ -106,7 +106,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(0, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOfNeg1Length_1WidthisError)
+		TEST_METHOD(PerimeterOfNeg1Length_1Widthis0)
 		{
 			int width = 1;
 			int length = -1;
@@ -115,7 +115,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(0, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOfDecimalLength_1WidthisError)
+		TEST_METHOD(PerimeterOfDecimalLength_1Widthis4)
 		{
 			int width = 1;
 			double length = 1.1;
@@ -124,7 +124,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(4, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf1Length_DecimalWidthisError)
+		TEST_METHOD(PerimeterOf1Length_DecimalWidthis4)
 		{
 			double width = 1.1;
 			int length = 1;
