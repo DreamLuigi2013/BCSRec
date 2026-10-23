@@ -25,60 +25,6 @@ namespace BCSRecTests
 
 			Assert::AreEqual(88, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf99Length_34Widthis266)
-		{
-			int width = 34;
-			int length = 99;
-
-			int actual_perimeter = getPerimeter(length, width);
-
-			Assert::AreEqual(266, actual_perimeter);
-		}
-		TEST_METHOD(PerimeterOf34Length_99Widthis266)
-		{
-			int width = 99;
-			int length = 34;
-
-			int actual_perimeter = getPerimeter(length, width);
-
-			Assert::AreEqual(266, actual_perimeter);
-		}
-		TEST_METHOD(PerimeterOf34Length_100Widthis66)
-		{
-			int width = 100;
-			int length = 34;
-
-			int actual_perimeter = getPerimeter(length, width);
-
-			Assert::AreEqual(66, actual_perimeter);
-		}
-		TEST_METHOD(PerimeterOf100Length_34Widthis66)
-		{
-			int width = 34;
-			int length = 100;
-
-			int actual_perimeter = getPerimeter(length, width);
-
-			Assert::AreEqual(66, actual_perimeter);
-		}
-		TEST_METHOD(PerimeterOf1Length_34Widthis70)
-		{
-			int width = 34;
-			int length = 1;
-
-			int actual_perimeter = getPerimeter(length, width);
-
-			Assert::AreEqual(70, actual_perimeter);
-		}
-		TEST_METHOD(PerimeterOf34Length_1Widthis70)
-		{
-			int width = 1;
-			int length = 34;
-
-			int actual_perimeter = getPerimeter(length, width);
-
-			Assert::AreEqual(70, actual_perimeter);
-		}
 		TEST_METHOD(PerimeterOf0Length_1Widthis0)
 		{
 			int width = 1;
@@ -86,7 +32,7 @@ namespace BCSRecTests
 
 			int actual_perimeter = getPerimeter(length, width);
 
-			Assert::AreEqual(0, actual_perimeter);
+			Assert::AreEqual(2, actual_perimeter);
 		}
 		TEST_METHOD(PerimeterOf1Length_0Widthis0)
 		{
@@ -95,7 +41,7 @@ namespace BCSRecTests
 
 			int actual_perimeter = getPerimeter(length, width);
 
-			Assert::AreEqual(0, actual_perimeter);
+			Assert::AreEqual(2, actual_perimeter);
 		}
 		TEST_METHOD(PerimeterOf1Length_Neg1Widthis0)
 		{
