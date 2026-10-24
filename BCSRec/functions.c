@@ -7,33 +7,30 @@ int getIntInput(char message[]) {
 	int input;
 		printf("\n%s\n", message);
 		 scanf_s("%i", &input);
-		return input;
+		 return input;
 }
-// read length if between 0 and 100 otherwise set it to -1
+// read length if between 1 and 99 otherwise set it to 1
 int setLength(int input) {
-	if (input >= 0 && input < 100)
+	if (input > 0 && input < 100)
 	{
 		int length = input;
 		return length;
 	}
-	
-	return(1);
-		
-	
+		return(1);
 }
-// read width if between 0 and 100 otherwise set it to -1
+// read width if between 1 and 99 otherwise set it to 1
 int setWidth(int input) {
-	if (input > 0 && input <= 100) 
+	if (input > 0 && input < 100)
 	{
 		int width = input;
 		return width;
 	}
-	return 1;
+	return (1);
 	
 }
 // calculate permiter
 int getPerimeter(int length, int width) {
-	int perimeter = length + length + width;
+	int perimeter = length + length + width + width;
 	return perimeter;
 }
 // calculate area

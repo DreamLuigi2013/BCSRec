@@ -205,8 +205,11 @@ namespace BCSRecTests
 		}
 		TEST_METHOD(SetLengthSpecialChar)
 		{
-			
-			int actual_length = setLength('$');
+			char length = '$';
+			if (sizeof(length) != 4) {
+				length = 1;
+			}
+			int actual_length = setLength(length);
 
 			Assert::AreEqual(1, actual_length);
 		}
@@ -262,8 +265,12 @@ namespace BCSRecTests
 		}
 		TEST_METHOD(SetWidthSpecialChar)
 		{
+			char width = '$';
+			if (sizeof(width) != 4) {
+				width = 1;
+			}
 
-			int actual_width = setWidth('$');
+			int actual_width = setWidth(width);
 
 			Assert::AreEqual(1, actual_width);
 		}
