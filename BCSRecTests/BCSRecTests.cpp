@@ -154,61 +154,118 @@ namespace BCSRecTests
 			Assert::AreEqual(8, actual_area);
 		}
 		// Set Length
-		TEST_METHOD(setLength8)
+		TEST_METHOD(SetLength8)
 		{
 			
 			int actual_length = setLength(8);
 
 			Assert::AreEqual(8, actual_length);
 		}
-		TEST_METHOD(setLength1)
+		TEST_METHOD(SetLength1)
 		{
 			
 			int actual_length = setLength(1);
 
 			Assert::AreEqual(1, actual_length);
 		}
-		TEST_METHOD(setLength0)
+		TEST_METHOD(SetLength0)
 		{
 			
 			int actual_length = setLength(0);
 
 			Assert::AreEqual(1, actual_length);
 		}
-		TEST_METHOD(setLength99)
+		TEST_METHOD(SetLength99)
 		{
 			
 			int actual_length = setLength(99);
 
 			Assert::AreEqual(99, actual_length);
 		}
-		TEST_METHOD(setLength100)
+		TEST_METHOD(SetLength100)
 		{
 			
 			int actual_length = setLength(100);
 
 			Assert::AreEqual(1, actual_length);
 		}
-		TEST_METHOD(setLengthDecimal)
+		TEST_METHOD(SetLengthDecimal)
 		{
 			
 			int actual_length = setLength(1.1);
 
 			Assert::AreEqual(1, actual_length);
 		}
-		TEST_METHOD(setLengthNegative)
+		TEST_METHOD(SetLengthNegative)
 		{
 			
 			int actual_length = setLength(-5);
 
 			Assert::AreEqual(1, actual_length);
 		}
-		TEST_METHOD(setLengthSpecialChar)
+		TEST_METHOD(SetLengthSpecialChar)
 		{
 			
 			int actual_length = setLength('$');
 
 			Assert::AreEqual(1, actual_length);
+		}
+		// Set Width
+		TEST_METHOD(SetWidth9)
+		{
+
+			int actual_width = setWidth(9);
+
+			Assert::AreEqual(9, actual_width);
+		}
+		TEST_METHOD(SetWidth1)
+		{
+
+			int actual_width = setWidth(1);
+
+			Assert::AreEqual(1, actual_width);
+		}
+		TEST_METHOD(SetWidth0)
+		{
+
+			int actual_width = setWidth(0);
+
+			Assert::AreEqual(1, actual_width);
+		}
+		TEST_METHOD(SetWidth99)
+		{
+
+			int actual_width = setWidth(99);
+
+			Assert::AreEqual(99, actual_width);
+		}
+		TEST_METHOD(SetWidth100)
+		{
+
+			int actual_width = setWidth(100);
+
+			Assert::AreEqual(1, actual_width);
+		}
+		TEST_METHOD(SetWidthDecimal)
+		{
+
+			int actual_width = setWidth(1.1);
+
+			Assert::AreEqual(1, actual_width);
+		}
+		TEST_METHOD(SetWidthNegative)
+		{
+
+			int actual_width = setWidth(-5);
+
+			Assert::AreEqual(1, actual_width);
+		}
+		TEST_METHOD(SetWidthSpecialChar)
+		{
+
+			int actual_width = setWidth('$');
+
+			Assert::AreEqual(1, actual_width);
 		}
 	};
 }
