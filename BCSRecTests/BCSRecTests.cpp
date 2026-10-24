@@ -25,7 +25,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(88, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf0Length_1Widthis0)
+		TEST_METHOD(PerimeterOf0Length_1Widthis2)
 		{
 			int width = 1;
 			int length = 0;
@@ -34,7 +34,7 @@ namespace BCSRecTests
 
 			Assert::AreEqual(2, actual_perimeter);
 		}
-		TEST_METHOD(PerimeterOf1Length_0Widthis0)
+		TEST_METHOD(PerimeterOf1Length_0Widthis2)
 		{
 			int width = 0;
 			int length = 1;
